@@ -1,0 +1,7 @@
+#ユーザー追加
+groupadd hogehoge
+useradd app -g hogehoge
+passwd app
+
+datetimectl set-timezone Asia/Tokyo
+systemctl restart crond.service
