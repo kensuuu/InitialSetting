@@ -1,7 +1,12 @@
-#ユーザー追加
+# ユーザー追加
 groupadd hogehoge
 useradd app -g hogehoge
 passwd app
 
+# cronの再起動
 sudo timedatectl set-timezone Asia/Tokyo
 systemctl restart crond.service
+
+# sudo権限の付与
+sudo visudo
+
