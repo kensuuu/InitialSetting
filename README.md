@@ -24,6 +24,11 @@ sudo localectl set-locale LANG=ja_JP.utf-8
 ```
 sudo systemctl restart crond.service
 ```  
+## RESTART CRON
+
+```
+sudo systemctl restart crond.service
+```
 
 
 
