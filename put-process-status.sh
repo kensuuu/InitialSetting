@@ -22,3 +22,5 @@ readonly REGION='your_instance_region'
 PROCESS_COUNT=`is_process_alive $@`
 
 USEDMEMORY=$(free -m | awk 'NR==2{printf "%.2f\t", $3*100/$2 }')
+
+aws cloudwatch put-metric-data --metric-name memory-usage --region $REGION --dimensions Instance=$INSTANCE_ID --namespace "MEMORY USAGE" --value $USEDMEMORY
