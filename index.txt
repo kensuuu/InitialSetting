@@ -10,3 +10,5 @@ systemctl restart crond.service
 # sudo権限の付与
 sudo visudo
 
+# ec2のセットアップを追加
+
